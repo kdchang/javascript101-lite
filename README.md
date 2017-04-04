@@ -28,7 +28,7 @@
 
 13. 單元13 實戰範例：上架自己的 Chrome Extensions
 
-14. 單元14 實戰範例：NodeJS Web 基礎（MV）
+14. 單元14 實戰範例：NodeJS Web 基礎（MVC）
 
 15. 單元15 實戰範例：NodeJS Web 基礎（Sequelize）
 
@@ -36,13 +36,13 @@
 
 17. 單元17 實戰範例：NodeJS 與 Socket.io 基礎（雲端聊天室）
 
-18. 單元18 實戰範例：部屬到應用程式 Heroku 雲端伺服器
+18. 單元18 實戰範例：部屬應用程式到 Heroku 雲端伺服器
 
 19. 募資金額 100% 解鎖：前端開發面試常見問題研討
 
 20. 募資金額 200% 解鎖：NodeJS Google Map API / Facebook API 新手入門
 
-21. 募資金額 400% 解鎖：NodeJS 網路爬蟲爬取動態網頁入門實戰 
+21. 募資金額 400% 解鎖：NodeJS 網路爬蟲入門實戰 
 
 22. 募資金額 600% 解鎖：NodeJS / Express / MongoDB 新手入門 JavaScript 後端開發
 
