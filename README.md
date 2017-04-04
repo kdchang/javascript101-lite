@@ -50,10 +50,6 @@
 
 24. 募資金額 1000% 解鎖：JavaScript ReactJS 應用程式開發入門初體驗
 
-# 實戰教學（Examples）
-- [X] Fetch
-- [X] Firebase
-- [X] NewTab
 
 	
 
