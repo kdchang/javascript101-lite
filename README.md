@@ -1,4 +1,4 @@
-#/ 從零開始學 JavaScript（JavaScript 程式設計新手村）
+# 從零開始學 JavaScript（JavaScript 程式設計新手村）
 由淺入深系統性學習原生 JavaScript 和程式設計的重要觀念， 讓你不只會用 jQuery 還了解它背後使用的原理，並為未來離開新手村出發挑戰前端進階學習打好堅實基礎知識，培養自學各種前端框架和工具的能力。
 
 # 課程大綱（Syllabus）
@@ -28,7 +28,7 @@
 
 13. 單元13 實戰範例：上架自己的 Chrome Extensions
 
-14. 單元14 實戰範例：NodeJS Web 基礎（MVC）
+14. 單元14 實戰範例：NodeJS Web 基礎（MV）
 
 15. 單元15 實戰範例：NodeJS Web 基礎（Sequelize）
 
