@@ -10,7 +10,7 @@
 
 4. 單元4 實戰範例：TodoList 代辦事項應用程式（JavaScript 函數 Function 基礎）
 
-5. 單元5 實戰範例：線上碼表（BOM & DOM 操作基礎與事件處理 Event Handle、Settimeout） 
+5. 單元5 實戰範例：線上碼表（BOM & DOM 操作基礎與事件處理 Event Handle、SetInterval） 
 
 6. 單元6 實戰範例：蟲蟲大戰：打蚊子遊戲（BOM & DOM 操作基礎與事件處理 Event Handle）  
 
@@ -22,9 +22,9 @@
 
 10. 單元10 實戰範例：部屬 JavaScript 應用程式到 Github Page
 
-11. 單元11 實戰範例：Chrome Extensions 基礎（表特分頁：Cookie、LocalStorage/SessionStorage 本地端資料儲存）
+11. 單元11 實戰範例：Chrome Extensions 基礎（表特分頁，Ajax）
 
-12. 單元12 實戰範例：Chrome Extensions 應用（Content Script）
+12. 單元12 實戰範例：Chrome Extensions 應用（網頁剪貼簿，Cookie，LocalStorage/SessionStorage 本地端資料儲存）
 
 13. 單元13 實戰範例：上架自己的 Chrome Extensions
 
@@ -49,8 +49,5 @@
 23. 募資金額 800% 解鎖：Electron 桌面應用程式開發入門（beauty+）
 
 24. 募資金額 1000% 解鎖：JavaScript ReactJS 應用程式開發入門初體驗
-
-
-	
 
 

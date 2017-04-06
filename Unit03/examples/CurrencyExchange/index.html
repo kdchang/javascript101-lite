@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		var change = function(event) {
+			console.log(event);
+		}
+
+		document.addEventListener('DOMContentLoaded',function() {
+    document.querySelector('select[name="ice-cream"]').onchange=changeEventHandler;
+},false);
+
+function changeEventHandler(event) {
+    // You can use “this” to refer to the selected element.
+    if(!event.target.value) alert('Please Select One');
+    else alert('You like ' + event.target.value + ' ice cream.'); 
+}
+	</script>
+</head>
+<body>
+	<select onchange="change()">
+		<option value="nt2us">台幣換美元</option>
+		<option value="us2nt">美元換台幣</option>
+	</select>
+	<form>
+	<input type="text" name="currency">
+	<div id="result"></div>
+	<button>換算</button>
+
+	<input type="text" name="currency">
+	<div id="result"></div>
+	<button>換算</button>
+
+    <select size="1" name="ice-cream">
+        <option value="">Select One …</option>
+        <option value="chocolate">Chocolate</option>
+        <option value="strawberry">Strawberry</option>
+        <option value="vanilla">Vanilla</option>
+    </select>
+</body>
+</html>
