@@ -24,7 +24,7 @@
 
 11. 單元11 實戰範例：Chrome Extensions 基礎（表特分頁，Ajax）
 
-12. 單元12 實戰範例：Chrome Extensions 應用（網頁剪貼簿，Cookie，LocalStorage/SessionStorage 本地端資料儲存）
+12. 單元12 實戰範例：Chrome Extensions 應用（剪貼，Cookie，LocalStorage/SessionStorage 本地端資料儲存）
 
 13. 單元13 實戰範例：上架自己的 Chrome Extensions
 
