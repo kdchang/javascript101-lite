@@ -28,13 +28,13 @@
 
 13. 單元13 實戰範例：上架自己的 Chrome Extensions
 
-14. 單元14 實戰範例：NodeJS Web 基礎（MVC）
+14. 單元14 實戰範例：NodeJS Web 基礎（Sequelize）
+ 
+15. 單元15 實戰範例：NodeJS Web 基礎前後端分離（TodoList）
 
-15. 單元15 實戰範例：NodeJS Web 基礎（Sequelize）
+16. 單元16 實戰範例：NodeJS 與 Socket.io 基礎（雲端聊天室）
 
-16. 單元16 實戰範例：NodeJS Web 基礎前後端分離（TodoList）
-
-17. 單元17 實戰範例：NodeJS 與 Socket.io 基礎（雲端聊天室）
+17. 單元17 實戰範例：NodeJS Web 基礎（Chatbot）
 
 18. 單元18 實戰範例：部屬應用程式到 Heroku 雲端伺服器
 

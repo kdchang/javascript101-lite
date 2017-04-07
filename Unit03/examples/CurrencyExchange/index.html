@@ -2,42 +2,43 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-	<script type="text/javascript">
-		var change = function(event) {
-			console.log(event);
-		}
-
-		document.addEventListener('DOMContentLoaded',function() {
-    document.querySelector('select[name="ice-cream"]').onchange=changeEventHandler;
-},false);
-
-function changeEventHandler(event) {
-    // You can use “this” to refer to the selected element.
-    if(!event.target.value) alert('Please Select One');
-    else alert('You like ' + event.target.value + ' ice cream.'); 
-}
-	</script>
+	<title>我家銀行換匯服務</title>
 </head>
 <body>
-	<select onchange="change()">
+	<h1>我家銀行換匯服務</h1>
+	<input type="text" id="currency" name="currency">
+	<select id="option-select">
 		<option value="nt2us">台幣換美元</option>
 		<option value="us2nt">美元換台幣</option>
 	</select>
-	<form>
-	<input type="text" name="currency">
-	<div id="result"></div>
-	<button>換算</button>
 
-	<input type="text" name="currency">
-	<div id="result"></div>
-	<button>換算</button>
+	<button id="submit-btn">換算</button>
 
-    <select size="1" name="ice-cream">
-        <option value="">Select One …</option>
-        <option value="chocolate">Chocolate</option>
-        <option value="strawberry">Strawberry</option>
-        <option value="vanilla">Vanilla</option>
-    </select>
+	<hr>
+	<div id="result"></div>
+
+	<script type="text/javascript">
+		var optionSelect = document.getElementById('option-select');
+
+		var submitBtn = document.getElementById('submit-btn');
+		var clickBtnHandler = function() {
+			var option = optionSelect.value;
+			var currency = document.getElementById('currency').value;
+			var result = document.getElementById('result');
+			if(currency === NaN || currency === '') {
+				result.innerHTML = '請輸入正確數字！';
+			}
+
+			if(option === 'nt2us') {
+				var outcome = parseFloat(currency) / 30;
+				result.innerHTML = 'US ' + outcome.toFixed(2);
+			} else if (option === 'us2nt')  {
+				var outcome = parseFloat(currency) * 30;
+				result.innerHTML = 'NT ' + outcome.toFixed(2);
+			}
+		};
+
+		submitBtn.addEventListener('click', clickBtnHandler);
+	</script>
 </body>
 </html>
