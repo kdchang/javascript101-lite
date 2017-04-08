@@ -10,7 +10,7 @@
 
 4. 單元4 實戰範例：TodoList 代辦事項應用程式（JavaScript 函數 Function 基礎）
 
-5. 單元5 實戰範例：線上碼表（BOM & DOM 操作基礎與事件處理 Event Handle、SetInterval） 
+5. 單元5 實戰範例：倒數計時（BOM & DOM 操作基礎與事件處理 Event Handle、SetInterval） 
 
 6. 單元6 實戰範例：蟲蟲大戰：打蚊子遊戲（BOM & DOM 操作基礎與事件處理 Event Handle）  
 
@@ -49,5 +49,3 @@
 23. 募資金額 800% 解鎖：Electron 桌面應用程式開發入門（beauty+）
 
 24. 募資金額 1000% 解鎖：JavaScript ReactJS 應用程式開發入門初體驗
-
-
