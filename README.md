@@ -6,25 +6,25 @@
 
 2. 單元2 JavaScript 開發環境建置、Github 與瀏覽器 DevTool 教學 
 
-3. 單元3 實戰範例：匯率計算應用程式（JavaScript 函數 Function 基礎） 
+3. 單元3 JavaScript 快速基礎入門（變數、流程控制、函式、物件）
 
-4. 單元4 實戰範例：TodoList 代辦事項應用程式（JavaScript 函數 Function 基礎）
+4. 單元4 實戰範例：匯率計算應用程式（JavaScript 函數 Function 基礎） 
 
-5. 單元5 實戰範例：倒數計時（BOM & DOM 操作基礎與事件處理 Event Handle、SetInterval） 
+5. 單元5 實戰範例：TodoList 代辦事項應用程式（JavaScript 函數 Function 基礎）
 
-6. 單元6 實戰範例：蟲蟲大戰：打蚊子遊戲（BOM & DOM 操作基礎與事件處理 Event Handle）  
+6. 單元6 實戰範例：倒數計時（BOM & DOM 操作基礎與事件處理 Event Handle、SetInterval） 
 
-7. 單元7 實戰範例：幻燈片相簿（BOM & DOM 操作基礎與事件處理 Event Handle）  
+7. 單元7 實戰範例：蟲蟲大戰：打蚊子遊戲（BOM & DOM 操作基礎與事件處理 Event Handle）   
 
-8. 單元8 實戰範例：政府開放資料 API 範例（流程控制、Ajax / JSON 基礎介紹）
+8. 單元8 實戰範例：幻燈片相簿（BOM & DOM 操作基礎與事件處理 Event Handle） 
 
-9. 單元9 實戰範例：jQuery 入門範例（套件使用）
+9. 單元9 實戰範例：政府開放資料 API 範例（流程控制、Ajax / JSON 基礎介紹）
 
-10. 單元10 實戰範例：部屬 JavaScript 應用程式到 Github Page
+10. 單元10 實戰範例：jQuery 入門範例（套件使用）
 
-11. 單元11 實戰範例：Chrome Extensions 基礎（表特分頁，Ajax）
+11. 單元11 實戰範例：部屬 JavaScript 應用程式到 Github Page
 
-12. 單元12 實戰範例：Chrome Extensions 應用（剪貼，Cookie，LocalStorage/SessionStorage 本地端資料儲存）
+12. 單元12 實戰範例：Chrome Extensions 基礎（表特分頁，Ajax，Cookie，LocalStorage/SessionStorage 本地端資料儲存）
 
 13. 單元13 實戰範例：上架自己的 Chrome Extensions
 
@@ -40,7 +40,7 @@
 
 19. 募資金額 100% 解鎖：前端開發面試常見問題研討
 
-20. 募資金額 200% 解鎖：NodeJS Google Map API / Facebook API 新手入門
+20. 募資金額 200% 解鎖：Google Map API / Facebook API 新手入門
 
 21. 募資金額 400% 解鎖：NodeJS 網路爬蟲入門實戰 
 
