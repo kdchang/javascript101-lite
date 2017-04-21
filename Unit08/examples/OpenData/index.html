@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="result">
+		<img id="loading" src="./loading.gif">
+	</div>
+	<script type="text/javascript">
+		var xhr = new XMLHttpRequest();
+		var url = 'http://163.29.157.32:8080/dataset/6a3e862a-e1cb-4e44-b989-d35609559463/resource/f4a75ba9-7721-4363-884d-c3820b0b917c/download/393625397fc043188a3f8237c1da1c6f.json';
+		xhr.open('GET', url);
+		xhr.send();
+		xhr.onreadystatechange = function() {
+			console.log(xhr.readyState);
+			console.log(xhr.responseText);
+			if(xhr.readyState === 4) {
+				document.getElementById('loading').style.display = 'none';
+				var outcome = '';
+				var data = JSON.parse(xhr.responseText);
+				var strHTML = '';
+				data.forEach(function(value) {
+					strHTML += '<img src="' + value['ImageName'] +'" >';
+				});
+				document.getElementById('result').innerHTML = strHTML;
+			}
+		};
+	</script>
+</body>
+</html>

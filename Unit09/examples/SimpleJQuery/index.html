@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>	
+	<!-- bxSlider Javascript file -->
+	<script src="./jquery.bxslider/jquery.bxslider.min.js"></script>
+	<!-- bxSlider CSS file -->
+	<link href="./jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
+</head>
+<body>
+	<h1>SimpleJQuery</h1>
+	<div id="list">List</div>
+	<p class="itemts">1</p>
+	<p class="itemts">2</p>
+	<p class="itemts">3</p>
+	
+	<ul class="bxslider">
+	  <li><img src="./1.jpg" /></li>
+	  <li><img src="./2.jpg" /></li>
+	  <li><img src="./3.jpg" /></li>
+	</ul>
+
+	<script type="text/javascript">
+		$('h1').css({ 'color': 'blue' });
+		$('#list').html('HTML List');
+		$('.itemts').css({ 'color': 'red' });
+
+		$(document).ready(function(){
+			$('.bxslider').bxSlider();
+		});
+	</script>
+</body>
+</html>

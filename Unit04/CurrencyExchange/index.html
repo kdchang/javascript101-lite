@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
 	<title>我家銀行換匯服務</title>
 </head>
 <body>
 	<h1>我家銀行換匯服務</h1>
-	<input type="text" id="currency" name="currency">
+	<input id="currency" type="text" name="currency">
 	<select id="option-select">
 		<option value="nt2us">台幣換美元</option>
 		<option value="us2nt">美元換台幣</option>
@@ -15,30 +14,30 @@
 	<button id="submit-btn">換算</button>
 
 	<hr>
+
 	<div id="result"></div>
 
 	<script type="text/javascript">
 		var optionSelect = document.getElementById('option-select');
 
 		var submitBtn = document.getElementById('submit-btn');
-		var clickBtnHandler = function() {
+
+		submitBtn.addEventListener('click', function() {
 			var option = optionSelect.value;
 			var currency = document.getElementById('currency').value;
-			var result = document.getElementById('result');
+			var result = document.getElementById('result');	
+
 			if(currency === NaN || currency === '') {
 				result.innerHTML = '請輸入正確數字！';
-			}
-
-			if(option === 'nt2us') {
+			} else if (option === 'nt2us') {
 				var outcome = parseFloat(currency) / 30;
-				result.innerHTML = 'US ' + outcome.toFixed(2);
-			} else if (option === 'us2nt')  {
+				result.innerHTML = 'US ' + outcome.toFixed(2); 
+			} else if(option === 'us2nt') {
 				var outcome = parseFloat(currency) * 30;
-				result.innerHTML = 'NT ' + outcome.toFixed(2);
+				result.innerHTML = 'TW ' + outcome.toFixed(2);
 			}
-		};
 
-		submitBtn.addEventListener('click', clickBtnHandler);
+		});
 	</script>
 </body>
 </html>

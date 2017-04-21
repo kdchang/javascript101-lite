@@ -73,7 +73,7 @@ function receivedMessage(event) {
       case 'hi':
         sendTextMessage(senderID, '您好，請說給我美圖，我就會送給您一張美美的圖喔！');
         break;
-      case '你好':
+      case '您好':
         sendTextMessage(senderID, '您好，請說給我美圖，我就會送給您一張美美的圖喔！');
         break;
       case '給我美圖':

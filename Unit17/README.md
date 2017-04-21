@@ -1,0 +1,5 @@
+[How To Develop A Chat Bot With Node.js](https://www.smashingmagazine.com/2016/10/how-to-develop-a-chat-bot-with-node-js/)
+[Creating a Simple Facebook Messenger AI Bot with API.ai in Node.js](http://www.girliemac.com/blog/2017/01/06/facebook-apiai-bot-nodejs/)
+[fbsamples/messenger-platform-samples](https://github.com/fbsamples/messenger-platform-samples)
+[Messenger 平台](https://developers.facebook.com/docs/messenger-platform/)
+[OpenZip](http://download.post.gov.tw/post/download/Xml_10510.xml)

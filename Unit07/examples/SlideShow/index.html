@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.slides {
+			display: none;
+		}
+		.fade {
+			animation-name: fade;
+			animation-duration: 2s;
+		}
+		@keyframes fade {
+			from {
+				opacity: 0.4;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1>SlideShow</h1>
+	<div class="slideshow-container">
+		<div class="slides fade">
+			<img src="./1.jpg">
+			<div>1</div>
+		</div>
+	</div>	
+	<div class="slideshow-container">
+		<div class="slides fade">
+			<img src="./2.jpg">
+			<div>2</div>
+		</div>
+	</div>	
+	<div class="slideshow-container">
+		<div class="slides fade">
+			<img src="./3.jpg">
+			<div>3</div>
+		</div>
+	</div>	
+	<a id="prev" href="#">Prev</a>
+	<a id="next" href="#">Next</a>
+	<script type="text/javascript">
+		document.getElementById('prev').addEventListener('click', function() {
+			nextSlde(-1);
+		});
+		document.getElementById('next').addEventListener('click', function() {
+			nextSlde(1);
+		});
+		var slideIndex = 1;
+		var showSlides = function(index) {
+			var slides = document.getElementsByClassName('slides');
+			if(index > slides.length) {
+				slideIndex = 1;
+			} 
+			if(index < 1) {
+				slideIndex = slides.length;
+			}
+			for (var i = 0; i < slides.length; i++) {
+				slides[i].style.display = 'none'; 
+			}
+			slides[slideIndex - 1].style.display = 'block';
+		};
+		showSlides(slideIndex);
+		var nextSlde = function(n) {
+			slideIndex += n
+			showSlides(slideIndex);
+		};
+	</script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+[Ajax](https://developer.mozilla.org/zh-TW/docs/AJAX/Getting_Started)
