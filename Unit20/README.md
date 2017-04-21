@@ -19,10 +19,6 @@
 
 # 面試前準備
 
----
-
-# 面試前準備
-
 1. 持續經營技術部落格
 2. 參與開放原始碼專案和社群
 3. 淨化自己的網路資訊
@@ -34,15 +30,11 @@
 
 # 前端技術面試概論
 
----
-
-# 前端技術面試概論
-
 在目前業界前端工程的光譜很廣，有專注在網頁互動設計或是軟體工程的範疇，所以在準備過程要了解職缺屬性和個人職涯定位
 
 ---
 
-# 這是某 F 公司前端徵才文
+## 這是某 F 公司前端徵才文
 
 ```
 1. 3+ years of JavaScript experience, 
@@ -63,7 +55,7 @@ a related technical field preferred
 
 ---
 
-# 這是某 Y 公司前端徵才文
+## 這是某 Y 公司前端徵才文
 
 ```
 1. A degree in Computer Science or a closely related field
@@ -88,7 +80,7 @@ Mocha and test runners like Testem, Protractor, Karma.
 
 ---
 
-# 這是某 P 公司前端徵才文
+## 這是某 P 公司前端徵才文
 
 ```
 1. 熟悉JavaScript、Ajax開發。
@@ -101,7 +93,7 @@ Mocha and test runners like Testem, Protractor, Karma.
 
 ---
 
-# 一般技術面試流程
+## 一般技術面試流程
 
 事實上，面試結果的很多環節是在事前和事後的準備決定
 
@@ -109,10 +101,6 @@ Mocha and test runners like Testem, Protractor, Karma.
 2. Phone Interview（[Codebunk](https://codebunk.com/)、[Coderpad](https://coderpad.io/)）或事前作業
 3. Onsite Interview（Behavior/Technical）
 4. HR Interview
-
----
-
-# 前端常見問題研討
 
 ---
 
@@ -126,12 +114,12 @@ Mocha and test runners like Testem, Protractor, Karma.
 
 ---
 
-# 自我介紹
+## 自我介紹
 描述自己過去的工作經驗、專案經驗、學經歷和為什麼想加入該團隊，能提供什麼貢獻？（有些外商公司會需要英文自我介紹）
 
 ---
 
-# HTML 基礎掌握
+## HTML 基礎掌握
 1. doctype 是什麼？如何使用？
 2. HTML5 有哪些新的語意標籤？
 3. scripts 引入位置有什麼差異？
@@ -140,7 +128,7 @@ Mocha and test runners like Testem, Protractor, Karma.
 
 ---
 
-# CSS 基礎掌握
+## CSS 基礎掌握
 1. 如何使用純 CSS 排出兩欄式版面？
 2. 知道什麼是 CSS 選擇器 / Pseudo-classes 嗎？
 3. 知道 box model 的概念嗎？ 
@@ -149,7 +137,7 @@ Mocha and test runners like Testem, Protractor, Karma.
 
 ---
 
-# JavaScript 
+## JavaScript 
 
 1. JavaScript 的型別轉換？
 2. 談談變數生存空間 Scope？ 
