@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OpenData</title>
+</head>
+<body>
+	<div id="result">
+		<img id="loading" src="./loading.gif">
+	</div>
+	<script type="text/javascript">
+		var xhr = new XMLHttpRequest();
+		var url = 'http://163.29.157.32:8080/dataset/6a3e862a-e1cb-4e44-b989-d35609559463/resource/f4a75ba9-7721-4363-884d-c3820b0b917c/download/1518829ccd4e43d9b9716235c360d541.json';
+		xhr.open('GET', url);
+		xhr.onreadystatechange = function() {
+			if(xhr.readyState === 4) {
+				console.log(xhr.responseText);
+				document.getElementById('loading').style.display = 'none';
+				var data = JSON.parse(xhr.responseText);
+				console.log(data[0].ImageName);
+				data.forEach(function(value, index) {
+					var image = document.createElement('img');
+					image.src = data[index].ImageName;
+					document.querySelector('#result').appendChild(image);
+				});
+			}
+		}
+		xhr.send();
+
+	</script>
+</body>
+</html>

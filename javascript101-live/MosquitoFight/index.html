@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MosquitoFight</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div id="info">
+		<span>Score:</span><span id="score-board">0</span>
+		<span>Time:</span><span id="counter"></span>
+	</div>
+	<script type="text/javascript">
+		var score = 0;
+		var countdown = 10;
+
+		var timer = setInterval(function() {
+			var gameOver = false;
+
+			if(document.getElementById('mosquito') === null && gameOver !== true) {
+				var mosquito = document.createElement('img');
+				mosquito.src = './images/mosquito.png';
+				mosquito.style.position = 'absolute';
+				var x = Math.floor(Math.random() * window.innerWidth);
+				var y = Math.floor(Math.random() * window.innerHeight);
+				console.log(window.innerWidth);
+
+				mosquito.style.top = y + 'px';
+				mosquito.style.left = x + 'px';
+
+				mosquito.id = 'mosquito';
+				document.body.appendChild(mosquito);
+			}
+
+			countdown -= 1;
+
+			document.getElementById('counter').innerHTML = countdown;
+
+			if(countdown <= 0) {
+				gameOver = true;
+				clearInterval(timer);
+				clearInterval(disappear);
+				document.getElementById('counter').innerHTML = 'Game Over!!';
+			}
+
+		}, 1000);
+
+		var disappear = setInterval(function() {
+			if(document.getElementById('mosquito') !== null){
+				document.body.removeChild(document.getElementById('mosquito'));
+			}
+		}, 3000);
+
+		document.body.addEventListener('click', function(e) {
+			var scoreBoard = document.getElementById('score-board');
+
+			if(e.target.id === 'mosquito') {
+				console.log(e.target);
+				e.target.parentNode.removeChild(e.target);
+				score += 5;
+
+				alert('kill');
+				scoreBoard.innerHTML = score;
+			}
+		});
+	</script>
+</body>
+</html>

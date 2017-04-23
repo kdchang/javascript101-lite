@@ -32,22 +32,22 @@
 
 15. 單元15 實戰範例：上架自己的 Chrome Extensions
 
-16. 單元16 實戰範例：NodeJS Web 基礎（iRich）
+16. 單元16 實戰範例：NodeJS Web 基礎（iRich 愛記帳雲端應用程式）
  
-18. 單元18 實戰範例：NodeJS 與 Socket.io 基礎（雲端聊天室）
+17. 單元17 實戰範例：NodeJS 與 Socket.io 基礎（即時雲端聊天室）
 
-19. 單元19 實戰範例：NodeJS Web 基礎（Facebook Messenger API Chatbot）
+18. 單元18 實戰範例：NodeJS 與 Facebook 聊天機器人入門（Facebook Messenger API Chatbot）
 
-20. 單元20 實戰範例：部屬應用程式到 Heroku 雲端伺服器
+19. 單元19 實戰範例：部屬應用程式到 Heroku 雲端伺服器
 
-21. 募資金額 100% 解鎖：前端開發面試常見問題研討
+20. 募資金額 100% 解鎖：前端開發面試常見問題研討
 
-22. 募資金額 200% 解鎖：Google Map API 新手入門
+21. 募資金額 200% 解鎖：Google Map API 實戰入門
 
-23. 募資金額 400% 解鎖：NodeJS 網路爬蟲入門實戰 
+22. 募資金額 400% 解鎖：NodeJS 網路爬蟲入門實戰 
 
-24. 募資金額 600% 解鎖：NodeJS Web 基礎前後端分離（iRich）
+23. 募資金額 600% 解鎖：NodeJS Web 基礎前後端分離（iRich）
 
-25. 募資金額 800% 解鎖：Electron 桌面應用程式開發入門（beauty+）
+24. 募資金額 800% 解鎖：Electron 桌面應用程式開發入門（beauty+）
 
-26. 募資金額 1000% 解鎖：JavaScript ReactJS 應用程式開發入門初體驗
+25. 募資金額 1000% 解鎖：JavaScript ReactJS 應用程式開發入門初體驗

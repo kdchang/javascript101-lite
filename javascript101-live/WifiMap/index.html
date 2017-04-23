@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>WifiMap</title>
+    <style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>	
+</head>
+<body>
+    <h3>WifiMap</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 23.363, lng: 121.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 11,
+          center: uluru
+        });
+
+
+
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', './itw_tw.json');
+        xhr.onreadystatechange = function() {
+        	if(xhr.readyState === 4) {
+	        	var data = JSON.parse(xhr.responseText);
+	        	data.forEach(function(value, index) {
+	        		var lat = value.LATITUDE;
+	        		var lng = value.LONGITUDE;
+              		var latLng = new google.maps.LatLng(lat, lng);
+			        var marker = new google.maps.Marker({
+			          position: latLng,
+			          map: map
+			        });
+			        var contentString = '<div>' + value.NAME + '</div><div>' + value.ADDR + '</div>';
+					var infowindow = new google.maps.InfoWindow({
+						content: contentString
+					});
+			        marker.addListener('click', function() {
+						infowindow.open(map, marker);
+					});
+	        	});
+        	}
+        };
+        xhr.send();
+
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaiGtvoRu-GaSH5CXPiFEVwMKzY-iJOw0&callback=initMap">
+    </script>
+</body>
+</html>

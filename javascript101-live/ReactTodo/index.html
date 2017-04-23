@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>ReactTodo</title>
+    <script src="https://unpkg.com/react@latest/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@latest/dist/react-dom.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      const TodoList = (props) => (
+        <ul>
+          {
+            props.items.map((item) => (
+              <li key={item.id}>{item.text}</li>
+            ))
+          }
+        </ul>
+      )
+
+      class App extends React.Component {
+        constructor(props) {
+          super(props);
+          this.handleSubmit = this.handleSubmit.bind(this);
+          this.onChange = this.onChange.bind(this);
+          this.state = {
+            items: [],
+            text: '',
+          }
+        }
+        onChange(e) {
+          console.log(e.target.value);
+          this.setState({ text: e.target.value });
+        }
+        handleSubmit(e) {
+          e.preventDefault();
+          var nextItems = this.state.items.concat({ text: this.state.text, id: Date.now() });
+          this.setState({
+            items: nextItems,
+            text: ''
+          });
+        }
+        render() {
+          return (
+            <div>
+              <h3>ReactTodo</h3>
+              <form onSubmit={this.handleSubmit}>
+                <input onChange={this.onChange} type="text" name="todo" value={this.state.text} />
+                <button type="submit">提交送出</button>
+              </form>
+              <hr /> 
+              <TodoList items={this.state.items} />
+            </div>
+          );
+        }
+      }
+      ReactDOM.render(
+        <App />,
+        document.getElementById('root')
+      );
+
+    </script>
+  </body>
+</html>

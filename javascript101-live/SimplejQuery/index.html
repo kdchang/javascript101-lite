@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SimplejQuery</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./jquery.bxslider/jquery.bxslider.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./jquery.bxslider/jquery.bxslider.min.css">
+</head>
+<body>
+	<h1>SimplejQuery</h1>
+	<div id="list">List</div>
+	<p class="items">1</p>
+	<p class="items">2</p>
+	<p class="items">3</p>
+
+	<ul class="bxslider">
+		<li><img src="./1.jpg"></li>
+		<li><img src="./2.jpg"></li>
+		<li><img src="./3.jpg"></li>
+	</ul>
+
+	<script type="text/javascript">
+		$('h1').css({ 'color': 'red' });
+		$('#list').html('HTML List');
+		$('.items').css({ 'color': 'blue' });
+
+		$(document).ready(function(){
+			console.log('dom load');
+			$('.bxslider').bxSlider();
+		});
+	</script>
+</body>
+</html>
