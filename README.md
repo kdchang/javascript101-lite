@@ -8,9 +8,9 @@
 
 3. 單元3 JavaScript 快速基礎入門（變數、資料型別、運算元運算子、流程控制）
 
-4. 單元4 JavaScript 快速基礎入門（函式、陣列與物件、迴圈、事件處理）
+4. 單元4 JavaScript 快速基礎入門（函式、陣列與物件）
 
-5. 單元5 JavaScript 快速基礎入門（Ajax 非同步資料傳遞）
+5. 單元5 JavaScript 快速基礎入門（迴圈、事件處理與Ajax 非同步資料傳遞）
 
 6. 單元6 實戰範例：匯率計算應用程式（JavaScript 函數 Function 基礎） 
 
