@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	  <head>
+	    <title>iRich 愛記帳</title>
+	    <link rel='stylesheet' href='/stylesheets/style.css' />
+	    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  </head>
+	  <body>
+
+	    <nav class="navbar navbar-inverse navbar-fixed-top">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="navbar-brand" href="#">iRich 愛記帳</a>
+	        </div>
+	        <div id="navbar" class="navbar-collapse collapse">
+	          <form class="navbar-form navbar-right">
+	            <a href="/accounts/create"><button type="button" class="btn btn-success">新增消費</button></a>
+	          </form>
+	        </div><!--/.navbar-collapse -->
+	      </div>
+	    </nav>
+
+	    <div class="container main-container">
+	    	<div>
+	    		<h3>統計資料</h3>
+	    		<div id="data-chart-info"></div>
+	    		<canvas id="data-chart" width="1000" height="200"></canvas>
+	    	</div>
+	    </div>
+
+	    <hr>
+
+		<div class="container">
+		<!-- Example row of columns -->
+			<table class="table table-hover">
+			  <tr>
+			  	<th>消費名稱</th>
+			  	<th>消費類型</th>
+			  	<th>支出</th>
+			  	<th>更新操作</th>
+			  	<th>刪除操作</th>
+			  </tr>
+			  <% for(var i = 0; i < accounts.length; i++) { %>
+				  <tr>
+				  	<td><a href="/accounts/<%= accounts[i].id %>"><%= accounts[i].title %></a></td>
+				  	<td><%= accounts[i].type %></td>
+				  	<td><%= accounts[i].cost %></td>
+				  	<td><a href="/accounts/<%= accounts[i].id %>/update"><button class="btn btn-warning">更新</button></a>
+				  	</td>
+				  	<td>
+				  		<form method="POST" action="/accounts/<%= accounts[i].id %>/delete">
+				  			<button type="submit" class="btn btn-danger">刪除</button>
+				  		</form>
+				  	</td>	
+				  </tr>
+			  <% } %>
+			</table>
+
+			<hr>
+
+			<footer>
+			<p>&copy; 2016 Company, Inc.</p>
+			</footer>
+
+		</div>
+
+
+    </div> <!-- /container -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js"></script>
+    <script type="text/javascript">
+    	function drawData(rawData) {
+    		var ctx = document.getElementById('data-chart');
+    		var countData = [0, 0, 0, 0, 0];
+    		rawData.forEach(function(value, index) {
+    			var type = value.type;
+    			var cost = value.cost;
+    			switch(type) {
+    				case 'eat':
+    					countData[0] += parseInt(cost);
+    					break;
+    				case 'cloth':
+    					countData[1] += parseInt(cost);
+    					break;
+    				case 'home':
+    					countData[2] += parseInt(cost);
+    					break;
+    				case 'traffic':
+    					countData[3] += parseInt(cost);
+    					break;
+    				case 'play':
+    					countData[4] += parseInt(cost);
+    					break;
+    			}
+    		});
+			var data = {
+			    labels: [
+		            '餐費',
+		            '服飾',
+		            '住',
+		            '行',
+		            '育樂'
+			    ],
+			    datasets: [
+			        {
+			            data: countData,
+			            backgroundColor: [
+			                'rgba(255, 99, 132, 0.5)',
+			                'rgba(54, 162, 235, 0.5)',
+			                'rgba(255, 206, 86, 0.5)',
+			                'rgba(75, 192, 192, 0.5)',
+			                'rgba(153, 102, 255, 0.5)',
+			            ],
+			            hoverBackgroundColor: [
+			                'rgba(255, 99, 132, 0.5)',
+			                'rgba(54, 162, 235, 0.5)',
+			                'rgba(255, 206, 86, 0.5)',
+			                'rgba(75, 192, 192, 0.5)',
+			                'rgba(153, 102, 255, 0.5)',
+			            ]
+			        }]
+			};
+		    new Chart(ctx, {
+			    data: data,
+			    type: "pie",
+			    options: {
+			        elements: {
+			            arc: {
+			                borderColor: "#000000"
+			            }
+			        }
+			    }
+			});
+    	}
+    	var xhr = new XMLHttpRequest();
+    	xhr.open('GET', '/api/accounts');
+    	xhr.onreadystatechange = function() {
+    		if(xhr.readyState === 4) {
+    			var data = JSON.parse(xhr.responseText);
+    			console.log(data);
+    			drawData(data);
+    		}
+    	};
+    	xhr.send();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	  <head>
+	    <title>iRich 愛記帳</title>
+	    <link rel='stylesheet' href='/stylesheets/style.css' />
+	    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  </head>
+	  <body>
+
+	    <nav class="navbar navbar-inverse navbar-fixed-top">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="navbar-brand" href="/">iRich 愛記帳</a>
+	        </div>
+	        <div id="navbar" class="navbar-collapse collapse">
+	          <form class="navbar-form navbar-right">
+	            <a href="/accounts/create"><button type="button" class="btn btn-success">新增消費</button></a>
+	          </form>
+	        </div><!--/.navbar-collapse -->
+	      </div>
+	    </nav>
+
+		<div class="container main-container">
+		<!-- Example row of columns -->
+			<ol class="breadcrumb">
+			  <li><a href="/">Home</a></li>
+			  <li class="active"><%= account.title %></li>
+			</ol>
+
+			<div>
+				<h3>消費標題：<%= account.title %></h3>
+				<h3>消費類別：<%= account.type %></h3>
+				<h3>消費花費：<%= account.cost %></h3>
+			</div>
+
+			<hr>
+
+			<footer>
+			<p>&copy; 2016 Company, Inc.</p>
+			</footer>
+
+		</div>
+
+
+    </div> <!-- /container -->
+  </body>
+</html>
