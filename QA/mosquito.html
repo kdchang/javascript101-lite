@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+
+<body>
+	<script>
+		var mosquito = document.createElement('img');
+		mosquito.id = 'mosquitoID';
+        // 需要先把動態生成的 img 插入到網頁結構中，才能透過 getElementById 選到指定元素
+		document.body.appendChild(mosquito);
+
+		var touchM = document.getElementById('mosquitoID');
+		touchM.addEventListener('click', function () {
+			console.log(touchM);
+			touchM.parentNode.removeChild(touchM);
+			score += 10;
+			document.getElementById('score').innerHTML = score;
+		})
+	</script>
+</body>
+
+</html>
